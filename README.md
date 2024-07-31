@@ -24,12 +24,11 @@ A neural network to generate captions for an image using CNN and RNN with BEAM S
 1. [Requirements](#1-requirements)
 2. [Training parameters and results](#2-training-parameters-and-results)
 3. [Generated Captions on Test Images](#3-generated-captions-on-test-images)
-4. [Procedure to Train Model](#4-procedure-to-train-model)
-5. [Procedure to Test on new images](#5-procedure-to-test-on-new-images)
-6. [Configurations (config.py)](#6-configurations-configpy)
-7. [Frequently encountered problems](#7-frequently-encountered-problems)
-8. [TODO](#8-todo)
-9. [References](#9-references)
+
+4. [Configurations (config.py)](#6-configurations-configpy)
+5. [Frequently encountered problems](#7-frequently-encountered-problems)
+6. [TODO](#8-todo)
+7. [References](#9-references)
 
 ## 1. Requirements
 
@@ -53,14 +52,6 @@ Required libraries for Python along with their version numbers used while making
 	<li>Matplotlib - 3.0.3</li>
 	<li>tqdm - 4.28.1</li>
 </ul>
-
-<strong>Flickr8k Dataset:</strong> <a href="https://forms.illinois.edu/sec/1713398">Dataset Request Form</a>
-
-<strong>UPDATE (April/2019):</strong> The official site seems to have been taken down (although the form still works). Here are some direct download links:
-
-<ul type="square">
-	<li><a href="https://github.com/jbrownlee/Datasets/releases/download/Flickr8k/Flickr8k_Dataset.zip">Flickr8k_Dataset</a></li>
-	<li><a href="https://github.com/jbrownlee/Datasets/releases/download/Flickr8k/Flickr8k_text.zip">Flickr8k_text</a></li>
 	Download Link Credits:<a href="https://machinelearningmastery.com/develop-a-deep-learning-caption-generation-model-in-python/"> Jason Brownlee</a>
 </ul>
 
