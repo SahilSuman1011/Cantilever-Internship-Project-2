@@ -3,7 +3,7 @@
 [![Issues](https://img.shields.io/github/issues/dabasajay/Image-Caption-Generator.svg?color=%231155cc)](https://github.com/dabasajay/Image-Caption-Generator/issues)
 [![Forks](https://img.shields.io/github/forks/dabasajay/Image-Caption-Generator.svg?color=%231155cc)](https://github.com/dabasajay/Image-Caption-Generator/network)
 [![Stars](https://img.shields.io/github/stars/dabasajay/Image-Caption-Generator.svg?color=%231155cc)](https://github.com/dabasajay/Image-Caption-Generator/stargazers)
-[![Ajay Dabas](https://img.shields.io/badge/Ajay-Dabas-825ee4.svg)](https://dabasajay.github.io/)
+
 
 A neural network to generate captions for an image using CNN and RNN with BEAM Search.
 
@@ -92,24 +92,9 @@ Required libraries for Python along with their version numbers used while making
 | <img width="50%" src="https://github.com/dabasajay/Image-Caption-Generator/raw/master/test_data/bikestunt.jpg" alt="Image 1"> | <ul><li><strong>Argmax:</strong> A man in a blue shirt is riding a bike on a dirt path.</li><li><strong>BEAM Search, k=3:</strong> A man is riding a bicycle on a dirt path.</li></ul>|
 | <img src="https://github.com/dabasajay/Image-Caption-Generator/raw/master/test_data/surfing.jpeg" alt="Image 2"> | <ul><li><strong>Argmax:</strong> A man in a red kayak is riding down a waterfall.</li><li><strong>BEAM Search, k=3:</strong> A man on a surfboard is riding a wave.</li></ul>|
 
-## 4. Procedure to Train Model
 
-1. Clone the repository to preserve directory structure.<br>
-`git clone https://github.com/dabasajay/Image-Caption-Generator.git`
-2. Put the required dataset files in `train_val_data` folder (files mentioned in readme there).
-3. Review `config.py` for paths and other configurations (explained below).
-4. Run `train_val.py`.
 
-## 5. Procedure to Test on new images
-
-1. Clone the repository to preserve directory structure.<br>
-`git clone https://github.com/dabasajay/Image-Caption-Generator.git`
-2. Train the model to generate required files in `model_data` folder (steps given above).
-3. Put the test images in `test_data` folder.
-4. Review `config.py` for paths and other configurations (explained below).
-5. Run `test.py`.
-
-## 6. Configurations (config.py)
+## 4. Configurations (config.py)
 
 **config**
 
@@ -135,7 +120,7 @@ Required libraries for Python along with their version numbers used while making
 3. **`dense_units`** :- Number of Dense units in Decoder(RNN) Model
 4. **`dropout`** :- Dropout probability used in Dropout layer in Decoder(RNN) Model
 
-## 7. Frequently encountered problems
+## 5. Frequently encountered problems
 
 - **Out of memory issue**:
   - Try reducing `batch_size`
@@ -144,7 +129,7 @@ Required libraries for Python along with their version numbers used while making
 - **Results aren't very great using beam search compared to argmax**:
   - Try higher `k` in BEAM search using `beam_search_k` parameter in config. Note that higher `k` will improve results but it'll also increase inference time significantly.
 
-## 8. TODO
+## 6. TODO
 
 - [X] Support for VGG16 Model. Uses InceptionV3 Model by default.
 
@@ -160,7 +145,7 @@ Required libraries for Python along with their version numbers used while making
 
 - [ ] Support for pre-trained word vectors like word2vec, GloVe etc.
 
-## 9. References
+## 7. References
 
 <ul type="square">
 	<li><a href="https://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Vinyals_Show_and_Tell_2015_CVPR_paper.pdf">Show and Tell: A Neural Image Caption Generator</a> - Oriol Vinyals, Alexander Toshev, Samy Bengio, Dumitru Erhan</li>
